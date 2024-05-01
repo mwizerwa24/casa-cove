@@ -26,8 +26,9 @@
   </div>
 </template>
 <style scoped>
-  form{
-    width: 350px;
+  input{
+    border: 1px red solid;
+    width: 300px;
   }
 </style>
   

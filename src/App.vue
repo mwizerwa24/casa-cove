@@ -33,7 +33,7 @@ nav {
     display: flex;
     gap: 20px;
     a {
-      font-weight: bold;
+      font-weight: 500;
       padding: 10px;
       color: #000;
       transition: .3s ease-in-out;
@@ -47,44 +47,64 @@ nav {
   }
   .right{
     position: relative;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    gap: 20px;
-    justify-content: center;
-    cursor: pointer;
-    transition: .3s;
-    border-radius: 10px;
     &:hover{
-      background: #aaaaaa10;
+      .dropdown-menu{
+        opacity: 1;
+        pointer-events: all;
+      }
     }
-    .img{
-      border: 1px gray solid;
-      border-radius: 50%;
+    .all{
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      gap: 20px;
+      cursor: pointer;
+      justify-content: center;
+      transition: .3s;
+      border-radius: 10px;
+      &:hover{
+        background: #aaaaaa23;
+        .dropdown-menu{
+          opacity: 1;
+        }
+      }
+      .img{
+        border: 1px gray solid;
+        border-radius: 50%;
       width: 40px;
       height: 40px;
       img{
-          width: 100%;
+        width: 100%;
           height: 100%;
           border-radius: 50%;
+        }
       }
     }
     .dropdown-menu{
-      border: 1px red solid;
+      opacity: 0;
+      transition: .3s;
+      pointer-events: none;
+      padding: 30px;
       position: absolute;
       top: 100%;
+      right: 0;
+      border-radius: 10px;
       background: rgb(42, 42, 42);
+      height: fit-content;
       .close{
-        border: 1px red solid;
         width: 20px;
+        border-radius: 50%;
         height: 20px;
         position: absolute;
-        right: 0;
+        right: 10px;
+        top: 10px;
         fill: #fff;
+
       }
       .drop-profile{
-        border: 1px red solid;
-        padding: 30px 4rem;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
         .pp{
           border: 1px gray solid;
           border-radius: 50%;
@@ -103,18 +123,64 @@ nav {
           height: 20px;
           position: absolute;
           right: 10px;
+          cursor: pointer;
           bottom: 0;
-          fill: #000;
+          fill: #fff;
+          background: #000;
+          border-radius: 50%;
+          padding: 4px;
         }
       }
+      h3{
+        color: #fff;
+        text-align: center;
+      }
       .btns{
-        border: 1px red solid;
+        display: flex;
+        margin: 20px 0;
+        gap: 5px;
         button{
+          display: flex;
+          justify-content: center;
+          background: rgb(22, 22, 22);
+          align-items: center;
+          width: 180px;
+          padding: 18px 7px;
+          gap: 10px;
+          border: none;
+          cursor: pointer;
+          &:hover{
+            background: rgb(51, 51, 51);
+          }
           svg{
             width: 20px;
           height: 20px;
+            fill: #2067ae;
+            border-radius: 50%;
           }
-          p{}
+          p{
+            color: #fff;
+          }
+        }
+        .signout{
+          border-radius: 30px 0 0 30px;
+        }
+        .terms{
+          border-radius: 0 30px 30px 0 ;
+        }
+        .manage{
+          border: 1px solid #fff;
+          padding: 12px 30px;
+          color: #2067ae;
+          background: rgb(42, 42, 42);
+          border-radius: 20px;
+          display: block;
+          font-size: .9rem;
+          border: 1px #fff solid;
+          margin: auto;
+          &:hover{
+            background: rgb(51, 51, 51);
+          }
         }
       }
     }
