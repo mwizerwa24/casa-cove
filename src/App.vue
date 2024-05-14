@@ -5,6 +5,18 @@
 
 </script>
 <style lang="scss">
+::-webkit-scrollbar {
+  width: 10px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #888; /* color of the scrollbar handle */
+}
 #app {
   font-family: gabarito;
   margin: 0;
@@ -12,7 +24,7 @@
   box-sizing: border-box;
 }
 body{
-  width: 100vw;
+  width: 100%;
 }
 nav {
   padding: 10px 30px;
@@ -65,6 +77,7 @@ nav {
       &:hover{
         background: #aaaaaa23;
         .dropdown-menu{
+          z-index: 100;
           opacity: 1;
         }
       }

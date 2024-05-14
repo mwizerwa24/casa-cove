@@ -47,8 +47,33 @@
        </div>
      </div>
    </nav>
-  <div class="home">
-    <h1>This is a Home Page</h1>
+  <div class="sale">
+    <h1>Homes for sale in Rwanda, Kigali</h1>
+      <div class="sale-houses-container">
+        <div class="grid">
+          <span>Brokered by "Owner Name"</span>
+          <div class="container">
+            <div class="img">
+              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
+              <div class="status">Available</div>
+            </div>
+            <div class="text">
+              <h4>House for sale</h4>
+              <h3>$ "House Cost"</h3>
+              <div class="description">
+                <p><span>"1234" </span>Beds</p>
+                <p><span>"1234" </span>Bathrooms</p>
+                <p><span>"1234" </span>Parking</p>
+                <p><span>"1234" </span>Sqft</p>
+              </div>
+              <div class="bottom">
+                <p>"Address"</p>
+                <button>Email Agent</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
   
   <div class="footer">
@@ -119,12 +144,118 @@
 </template>
 
 <style type="scss" scoped>
-
+.sale{
+  h1{
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .sale-houses-container{
+    border: 1px red solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    .grid{
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      gap: 10px;
+      span{
+        color: #666;
+        font-size: .8rem;
+      }
+      .container{
+        box-shadow: 0 2px 21px 2px #00000017;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 20px;
+        gap: 10px;
+        .img{
+          position: relative;
+          width: 100%;
+          height: 350px;
+          img{
+          border-radius: 20px 20px 0 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+        .status{
+          position: absolute;
+          top: 10px;
+          left: 30px;
+          background: green;
+          color: #fff;
+          font-size: .9rem;
+          padding:7px 20px;
+          border-radius: 20px;
+        }
+        .text{
+          padding:0 20px 10px 20px;
+          h4{
+            margin: 10px 0;
+            position: relative;
+            &::after{
+              position: absolute;
+              content: '';
+              width: 10px;
+              height: 10px;
+              top: 0;
+              left: 0;
+              border-radius: 50%;
+              background: green;
+            }
+          }
+          .description{
+            padding: 10px 0;
+            display: flex;
+            gap: 10px;
+            p{
+              font-size: .9rem;
+              span{
+                font-size: 1.1rem;
+                color: #000;
+                font-weight: 700;
+              }
+            }
+          }
+          .bottom{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: space-between;
+            button{
+              background: transparent;
+              color: #000;
+              padding: 10px 20px;
+              border-radius: 20px;
+              border: 1px solid #2067ae;
+              font-size: .9rem;
+              transition: .2s;
+              cursor: pointer;
+              &:hover{
+                background: #2067ae;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .footer{
   padding: 10px 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 -12px 16px 12px #00000017;
   .links{
      display: flex;
      gap: 10px;

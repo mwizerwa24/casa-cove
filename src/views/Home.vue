@@ -24,7 +24,7 @@
           </div>
           <h3>Hi, Admin!</h3>
           <div class="btns">
-            <RouterLink to="/manageaccount" class="manage">Manage Your Account</RouterLink>
+            <RouterLink to="manageaccount" class="manage">Manage Your Account</RouterLink>
           </div>
           <div class="btns">
             <RouterLink to="signin">
@@ -51,7 +51,7 @@
       <div class="container">
         <h1>Welcome to Casa Cove</h1>
         <p>At Casa Nova, we're more than just a house selling company; we're your dedicated partners in finding the perfect home. With a commitment to excellence and a passion for real estate, we streamline the process, ensuring a smooth and rewarding experience for our clients. Whether you're searching for your first home or your forever abode, our expert team is here to guide you every step of the way. Trust us to turn your housing aspirations into a reality.</p>
-        <RouterLink to="/signin">
+        <RouterLink to="forsale">
           <button>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="60" height="60">
             <path d="M15 3C8.373 3 3 8.373 3 15C3 21.627 8.373 27 15 27C21.627 27 27 21.627 27 15C27 8.373 21.627 3 15 3 z M 22 8L17 17L8 22L13 13L22 8 z M 15 14 A 1 1 0 0 0 14 15 A 1 1 0 0 0 15 16 A 1 1 0 0 0 16 15 A 1 1 0 0 0 15 14 z" fill="#FFFFFF" />
