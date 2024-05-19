@@ -7,6 +7,7 @@
         <router-link to="/">Home</router-link>
         <router-link to="/forsale">For Sale</router-link>
         <router-link to="/forrent">For Rent</router-link>
+        <router-link to="/forrent">About Us</router-link>
         <router-link to="/contactus">Contact Us</router-link>
      </div>
      <div class="right">
@@ -50,6 +51,259 @@
   <div class="sale">
     <h1>Homes for sale in Rwanda, Kigali</h1>
       <div class="sale-houses-container">
+        <div class="grid">
+          <span>Brokered by "Owner Name"</span>
+          <div class="container">
+            <div class="img">
+              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
+              <div class="status">Available</div>
+            </div>
+            <div class="text">
+              <h4>House for sale</h4>
+              <h3>$ "House Cost"</h3>
+              <div class="description">
+                <p><span>"1234" </span>Beds</p>
+                <p><span>"1234" </span>Bathrooms</p>
+                <p><span>"1234" </span>Parking</p>
+                <p><span>"1234" </span>Sqft</p>
+              </div>
+              <div class="bottom">
+                <p>"Address"</p>
+                <button>Email Agent</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <span>Brokered by "Owner Name"</span>
+          <div class="container">
+            <div class="img">
+              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
+              <div class="status">Available</div>
+            </div>
+            <div class="text">
+              <h4>House for sale</h4>
+              <h3>$ "House Cost"</h3>
+              <div class="description">
+                <p><span>"1234" </span>Beds</p>
+                <p><span>"1234" </span>Bathrooms</p>
+                <p><span>"1234" </span>Parking</p>
+                <p><span>"1234" </span>Sqft</p>
+              </div>
+              <div class="bottom">
+                <p>"Address"</p>
+                <button>Email Agent</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <span>Brokered by "Owner Name"</span>
+          <div class="container">
+            <div class="img">
+              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
+              <div class="status">Available</div>
+            </div>
+            <div class="text">
+              <h4>House for sale</h4>
+              <h3>$ "House Cost"</h3>
+              <div class="description">
+                <p><span>"1234" </span>Beds</p>
+                <p><span>"1234" </span>Bathrooms</p>
+                <p><span>"1234" </span>Parking</p>
+                <p><span>"1234" </span>Sqft</p>
+              </div>
+              <div class="bottom">
+                <p>"Address"</p>
+                <button>Email Agent</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <span>Brokered by "Owner Name"</span>
+          <div class="container">
+            <div class="img">
+              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
+              <div class="status">Available</div>
+            </div>
+            <div class="text">
+              <h4>House for sale</h4>
+              <h3>$ "House Cost"</h3>
+              <div class="description">
+                <p><span>"1234" </span>Beds</p>
+                <p><span>"1234" </span>Bathrooms</p>
+                <p><span>"1234" </span>Parking</p>
+                <p><span>"1234" </span>Sqft</p>
+              </div>
+              <div class="bottom">
+                <p>"Address"</p>
+                <button>Email Agent</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <span>Brokered by "Owner Name"</span>
+          <div class="container">
+            <div class="img">
+              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
+              <div class="status">Available</div>
+            </div>
+            <div class="text">
+              <h4>House for sale</h4>
+              <h3>$ "House Cost"</h3>
+              <div class="description">
+                <p><span>"1234" </span>Beds</p>
+                <p><span>"1234" </span>Bathrooms</p>
+                <p><span>"1234" </span>Parking</p>
+                <p><span>"1234" </span>Sqft</p>
+              </div>
+              <div class="bottom">
+                <p>"Address"</p>
+                <button>Email Agent</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <span>Brokered by "Owner Name"</span>
+          <div class="container">
+            <div class="img">
+              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
+              <div class="status">Available</div>
+            </div>
+            <div class="text">
+              <h4>House for sale</h4>
+              <h3>$ "House Cost"</h3>
+              <div class="description">
+                <p><span>"1234" </span>Beds</p>
+                <p><span>"1234" </span>Bathrooms</p>
+                <p><span>"1234" </span>Parking</p>
+                <p><span>"1234" </span>Sqft</p>
+              </div>
+              <div class="bottom">
+                <p>"Address"</p>
+                <button>Email Agent</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <span>Brokered by "Owner Name"</span>
+          <div class="container">
+            <div class="img">
+              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
+              <div class="status">Available</div>
+            </div>
+            <div class="text">
+              <h4>House for sale</h4>
+              <h3>$ "House Cost"</h3>
+              <div class="description">
+                <p><span>"1234" </span>Beds</p>
+                <p><span>"1234" </span>Bathrooms</p>
+                <p><span>"1234" </span>Parking</p>
+                <p><span>"1234" </span>Sqft</p>
+              </div>
+              <div class="bottom">
+                <p>"Address"</p>
+                <button>Email Agent</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <span>Brokered by "Owner Name"</span>
+          <div class="container">
+            <div class="img">
+              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
+              <div class="status">Available</div>
+            </div>
+            <div class="text">
+              <h4>House for sale</h4>
+              <h3>$ "House Cost"</h3>
+              <div class="description">
+                <p><span>"1234" </span>Beds</p>
+                <p><span>"1234" </span>Bathrooms</p>
+                <p><span>"1234" </span>Parking</p>
+                <p><span>"1234" </span>Sqft</p>
+              </div>
+              <div class="bottom">
+                <p>"Address"</p>
+                <button>Email Agent</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <span>Brokered by "Owner Name"</span>
+          <div class="container">
+            <div class="img">
+              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
+              <div class="status">Available</div>
+            </div>
+            <div class="text">
+              <h4>House for sale</h4>
+              <h3>$ "House Cost"</h3>
+              <div class="description">
+                <p><span>"1234" </span>Beds</p>
+                <p><span>"1234" </span>Bathrooms</p>
+                <p><span>"1234" </span>Parking</p>
+                <p><span>"1234" </span>Sqft</p>
+              </div>
+              <div class="bottom">
+                <p>"Address"</p>
+                <button>Email Agent</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <span>Brokered by "Owner Name"</span>
+          <div class="container">
+            <div class="img">
+              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
+              <div class="status">Available</div>
+            </div>
+            <div class="text">
+              <h4>House for sale</h4>
+              <h3>$ "House Cost"</h3>
+              <div class="description">
+                <p><span>"1234" </span>Beds</p>
+                <p><span>"1234" </span>Bathrooms</p>
+                <p><span>"1234" </span>Parking</p>
+                <p><span>"1234" </span>Sqft</p>
+              </div>
+              <div class="bottom">
+                <p>"Address"</p>
+                <button>Email Agent</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <span>Brokered by "Owner Name"</span>
+          <div class="container">
+            <div class="img">
+              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
+              <div class="status">Available</div>
+            </div>
+            <div class="text">
+              <h4>House for sale</h4>
+              <h3>$ "House Cost"</h3>
+              <div class="description">
+                <p><span>"1234" </span>Beds</p>
+                <p><span>"1234" </span>Bathrooms</p>
+                <p><span>"1234" </span>Parking</p>
+                <p><span>"1234" </span>Sqft</p>
+              </div>
+              <div class="bottom">
+                <p>"Address"</p>
+                <button>Email Agent</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="grid">
           <span>Brokered by "Owner Name"</span>
           <div class="container">
@@ -144,6 +398,11 @@
 </template>
 
 <style type="scss" scoped>
+
+
+:root{
+        --primary-color: #2067ae;
+    }
 .sale{
   h1{
     font-size: 30px;

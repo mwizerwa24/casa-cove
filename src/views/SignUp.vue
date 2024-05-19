@@ -49,6 +49,10 @@
 </div>
 </template>
 <style type="scss">
+
+:root{
+        --primary-color: #2067ae;
+    }
 *{
     margin: 0;
     padding: 0;

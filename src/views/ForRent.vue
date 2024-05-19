@@ -7,6 +7,7 @@
         <router-link to="/">Home</router-link>
         <router-link to="/forsale">For Sale</router-link>
         <router-link to="/forrent">For Rent</router-link>
+        <router-link to="/aboutus">About Us</router-link>
         <router-link to="/contactus">Contact Us</router-link>
      </div>
      <div class="right">
@@ -118,6 +119,9 @@
 </template>
 <style type="scss" scoped>
   
+  :root{
+        --primary-color: #2067ae;
+    }
   .footer{
     padding: 10px 3rem;
     display: flex;

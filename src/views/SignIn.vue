@@ -1,19 +1,19 @@
 <template>
   <div class="wrapper">
 
-    <form action="" method="post">
+    <form action="" method="post" @submit.prevent="formsubmit">
         <img src="../assets/fav-000.png" alt="" srcset="">
         <div class="field">
             <label for="username">Username</label>
-                <input type="text" id="username" name="username" value="" placeholder="User123">
+            <input type="text" placeholder="User123" v-model="username" required>
         </div>
         
         <div class="field">
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" value="" placeholder="Password">
+            <input type="password" placeholder="Password" v-model="passkey" required>
         </div>
         <div class="field">
-            <button type="submit" name="submit">Create account</button>
+            <button>Create account</button>
         </div>
         <p>New Here? <RouterLink to="/signup">Sign Up</RouterLink></p>
     </form>
@@ -31,4 +31,33 @@
     width: 300px;
   }
 </style>
-  
+<script>
+  export default{
+    data() {
+      return{
+        username: "",
+        passkey: ""
+      }
+    },
+    methods: {
+      formsubmit(){
+        let vm = this
+        this.axios.post('http://localhost/casa-cove/php/signin.php', {username: this.username, passkey: this.passkey})
+        .then(function(res){
+            // vm.$notify(res.data.message);
+            if(res.data.status == 'success'){
+              vm.$notify({
+                title: res.data.message,
+                type: 'success',
+              })
+            }else{
+              vm.$notify({
+                title: res.data.message,
+                type: 'error',
+              })
+            }
+          })
+      }
+    }
+  }
+</script>

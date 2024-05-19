@@ -1,4 +1,5 @@
 <template>
+  <notifications position="bottom right"/>
   <router-view/>
 </template>
 <script>

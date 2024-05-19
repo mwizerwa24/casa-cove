@@ -7,6 +7,7 @@
         <router-link to="/">Home</router-link>
         <router-link to="/forsale">For Sale</router-link>
         <router-link to="/forrent">For Rent</router-link>
+        <router-link to="/forrent">About Us</router-link>
         <router-link to="/contactus">Contact Us</router-link>
      </div>
      <div class="right">
@@ -128,6 +129,10 @@
   </div>
 </template>
 <style type="scss" scoped>
+
+    :root{
+        --primary-color: #2067ae;
+    }
   .home{
     position: relative;
     height: 90.3vh;

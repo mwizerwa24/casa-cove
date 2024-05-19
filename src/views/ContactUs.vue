@@ -7,6 +7,7 @@
         <router-link to="/">Home</router-link>
         <router-link to="/forsale">For Sale</router-link>
         <router-link to="/forrent">For Rent</router-link>
+        <router-link to="/forrent">About Us</router-link>
         <router-link to="/contactus">Contact Us</router-link>
      </div>
      <div class="right">
@@ -47,8 +48,33 @@
        </div>
      </div>
    </nav>
-  <div class="home">
-    <h1>This is a Home Page</h1>
+  <div class="contactus">
+    <h1>Get in touch with us!</h1>
+    <div class="container">
+      <div class="left">
+        <form action="">
+          <label for="">Username</label>
+          <input type="text" name="name" placeholder="Username" required>
+          <label for="">Email</label>
+          <input type="email" name="email" placeholder="abc@example.com" required>
+          <label for="">Select an Interest</label>
+          <select name="" id="">
+            <option value="">About Houses</option>
+            <option value="">About Website</option>
+            <option value="">About Individual problems</option>
+            <option value="">Feedback</option>
+            <option value="">Other</option>
+          </select>
+          <label for="">Message</label>
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit">Send</button>
+          <p>We will get back to you as soon as possible!</p>
+        </form>
+      </div>
+      <div class="right">
+        <img src="../assets/shake-hands.jpg" alt="">
+      </div>
+    </div>
   </div>
   <div class="footer">
       <div></div>
@@ -117,6 +143,60 @@
   </div>
 </template>
 <style type="scss" scoped>
+
+    :root{
+        --primary-color: #2067ae;
+    }
+
+  .contactus{
+    h1{
+      border: 1px green solid;
+      text-align: center;
+      padding: 10px;
+    }
+    .container{
+      border: 1px red solid;
+      display: flex;
+      .left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        form{
+          display: flex;
+          flex-direction: column;
+          border: 1px red solid;
+          padding: 10px;
+          width: 100%;
+          gap: 10px;
+          input, textarea, select{
+            font-size: 1rem;
+            display: block;
+            width: 400px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px grey solid;
+            outline-color: #2067ae;
+          }
+          button{
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 1px grey solid;
+            background-color: var(--primary-color);
+            color: #fff;
+            cursor: pointer;
+          }
+        }
+      }
+      .right{
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    
+    }
   
   .footer{
     padding: 10px 3rem;
