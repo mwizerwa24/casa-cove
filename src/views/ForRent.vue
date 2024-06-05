@@ -123,10 +123,11 @@
         --primary-color: #2067ae;
     }
   .footer{
-    padding: 10px 3rem;
+    padding: 20px 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 -12px 16px 12px #00000017;
     .links{
        display: flex;
        gap: 10px;

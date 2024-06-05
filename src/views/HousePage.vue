@@ -7,7 +7,7 @@
           <router-link to="/">Home</router-link>
           <router-link to="/forsale">For Sale</router-link>
           <router-link to="/forrent">For Rent</router-link>
-        <router-link to="/aboutus">About Us</router-link>
+          <router-link to="/aboutus">About Us</router-link>
           <router-link to="/contactus">Contact Us</router-link>
        </div>
        <div class="right">
@@ -48,39 +48,72 @@
          </div>
        </div>
      </nav>
-    <div class="about">
-      <h1>About Us</h1>
-      <div class="first-section">
-        <p>Welcome to [Your Company Name], where your dream home becomes a reality. With years of experience in the real estate market, we are a dedicated team of professionals committed to providing exceptional service and support to home buyers and sellers. Our mission is to make the process of buying or selling a home as smooth and stress-free as possible.
-          At [Your Company Name], we understand that finding the perfect home is one of the most significant decisions you'll make in your lifetime. That's why we take the time to listen to your needs and preferences, ensuring that we match you with a property that suits your lifestyle and budget. Our extensive knowledge of the local market, combined with our innovative marketing strategies, allows us to provide you with the best possible opportunities.</p>
-          <div class="head-workers"></div>
-      </div>
-      <div class="second-section">
-        <p>For sellers, we offer comprehensive marketing plans to showcase your property to the widest audience, utilizing cutting-edge technology and traditional marketing techniques. We provide detailed market analysis to price your home competitively and strategically, ensuring a swift and profitable sale.
-          For buyers, our dedicated agents work tirelessly to find properties that meet your criteria. We guide you through every step of the buying process, from initial search to closing, providing expert advice and support along the way.</p>
-          <div class="vision-mission"></div>
+    <div class="house">
+      <h1>House title</h1>
+      <div class="container">
+        <div class="slider">
+          <swiper :slidesPerView="1" :spaceBetween="10" :loop="true" :pagination="{   clickable: true, }" :navigation="true" :modules="modules" class="mySwiper">
+            <swiper-slide><img src="../assets/background.jpg" alt="" :draggable="false" :unselectable="true"></swiper-slide>
+            <swiper-slide><img src="../assets/background2.jpg" alt="" :draggable="false" :unselectable="true"></swiper-slide>
+            <swiper-slide><img src="../assets/background3.jpg" alt="" :draggable="false" :unselectable="true"></swiper-slide>
+            <swiper-slide><img src="../assets/background4.jpg" alt="" :draggable="false" :unselectable="true"></swiper-slide>
+            <swiper-slide><img src="../assets/background5.jpg" alt="" :draggable="false" :unselectable="true"></swiper-slide>
+          </swiper>
         </div>
-      <div class="third-section">
-        <p>We pride ourselves on our integrity, transparency, and commitment to client satisfaction. Our goal is to build lasting relationships with our clients, based on trust and mutual respect. Whether you are a first-time homebuyer, looking to upgrade, or interested in investment properties, [Your Company Name] is here to help you achieve your real estate goals.
-          Thank you for considering [Your Company Name]. We look forward to helping you find your dream home.</p>
-          <div class="reviews">
-            <swiper :slides-per-view="3" :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange">
-              <swiper-slide><img src="../assets/background.jpg" alt="" srcset=""></swiper-slide>
-              <swiper-slide><img src="../assets/background2.jpg" alt="" srcset=""></swiper-slide>
-              <swiper-slide><img src="../assets/background3.jpg" alt="" srcset=""></swiper-slide>
-              <swiper-slide><img src="../assets/background4.jpg" alt="" srcset=""></swiper-slide>
-              <swiper-slide><img src="../assets/background5.jpg" alt="" srcset=""></swiper-slide>
-              <swiper-slide><img src="../assets/background6.jpg" alt="" srcset=""></swiper-slide>
-              <swiper-slide><img src="../assets/shake-hands.jpg" alt="" srcset=""></swiper-slide>
-            </swiper>
-          </div>
+        <div class="details">
+            <h2>House details</h2>
+            <div class="facts">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+                    <path d="M24,45c-0.494,0-0.956-0.243-1.236-0.65l-16.5-24c-0.425-0.618-0.328-1.455,0.227-1.96l16.5-15c0.571-0.52,1.446-0.52,2.018,0l16.5,15c0.555,0.505,0.652,1.342,0.227,1.96l-16.5,24C24.956,44.757,24.494,45,24,45z"/>
+                    </svg>
+                    <span> house.Section </span>
+                </p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+                    <path d="M24,45c-0.494,0-0.956-0.243-1.236-0.65l-16.5-24c-0.425-0.618-0.328-1.455,0.227-1.96l16.5-15c0.571-0.52,1.446-0.52,2.018,0l16.5,15c0.555,0.505,0.652,1.342,0.227,1.96l-16.5,24C24.956,44.757,24.494,45,24,45z"/>
+                    </svg>
+                    <span> house.House_Status </span>
+                </p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+                    <path d="M24,45c-0.494,0-0.956-0.243-1.236-0.65l-16.5-24c-0.425-0.618-0.328-1.455,0.227-1.96l16.5-15c0.571-0.52,1.446-0.52,2.018,0l16.5,15c0.555,0.505,0.652,1.342,0.227,1.96l-16.5,24C24.956,44.757,24.494,45,24,45z"/>
+                    </svg>
+                    <span> house.Address </span>
+                </p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+                    <path d="M24,45c-0.494,0-0.956-0.243-1.236-0.65l-16.5-24c-0.425-0.618-0.328-1.455,0.227-1.96l16.5-15c0.571-0.52,1.446-0.52,2.018,0l16.5,15c0.555,0.505,0.652,1.342,0.227,1.96l-16.5,24C24.956,44.757,24.494,45,24,45z"/>
+                    </svg>
+                    <span> house.Plot_size </span>
+                </p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+                    <path d="M24,45c-0.494,0-0.956-0.243-1.236-0.65l-16.5-24c-0.425-0.618-0.328-1.455,0.227-1.96l16.5-15c0.571-0.52,1.446-0.52,2.018,0l16.5,15c0.555,0.505,0.652,1.342,0.227,1.96l-16.5,24C24.956,44.757,24.494,45,24,45z"/>
+                    </svg>
+                    <span>Price: house.Price </span>
+                </p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+                    <path d="M24,45c-0.494,0-0.956-0.243-1.236-0.65l-16.5-24c-0.425-0.618-0.328-1.455,0.227-1.96l16.5-15c0.571-0.52,1.446-0.52,2.018,0l16.5,15c0.555,0.505,0.652,1.342,0.227,1.96l-16.5,24C24.956,44.757,24.494,45,24,45z"/>
+                    </svg>
+                    <span>Rating: house.Rating </span>
+                </p>
+            </div>
+        </div>
+      </div>
+      <div class="below-section">
+        <div class="descr">
+          <h2>Description</h2>
+        </div>
       </div>
     </div>
+
     <div class="footer">
         <div></div>
         <p>Copyright ©Casa Cove 2024</p>
         <div class="links">
-          <a href="https://instagram.com">
+          <a href="https://instagram.com" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="96" height="96">
             <path fill="#304ffe" d="M41.67,13.48c-0.4,0.26-0.97,0.5-1.21,0.77c-0.09,0.09-0.14,0.19-0.12,0.29v1.03l-0.3,1.01l-0.3,1l-0.33,1.1 l-0.68,2.25l-0.66,2.22l-0.5,1.67c0,0.26-0.01,0.52-0.03,0.77c-0.07,0.96-0.27,1.88-0.59,2.74c-0.19,0.53-0.42,1.04-0.7,1.52 c-0.1,0.19-0.22,0.38-0.34,0.56c-0.4,0.63-0.88,1.21-1.41,1.72c-0.41,0.41-0.86,0.79-1.35,1.11c0,0,0,0-0.01,0 c-0.08,0.07-0.17,0.13-0.27,0.18c-0.31,0.21-0.64,0.39-0.98,0.55c-0.23,0.12-0.46,0.22-0.7,0.31c-0.05,0.03-0.11,0.05-0.16,0.07 c-0.57,0.27-1.23,0.45-1.89,0.54c-0.04,0.01-0.07,0.01-0.11,0.02c-0.4,0.07-0.79,0.13-1.19,0.16c-0.18,0.02-0.37,0.03-0.55,0.03 l-0.71-0.04l-3.42-0.18c0-0.01-0.01,0-0.01,0l-1.72-0.09c-0.13,0-0.27,0-0.4-0.01c-0.54-0.02-1.06-0.08-1.58-0.19 c-0.01,0-0.01,0-0.01,0c-0.95-0.18-1.86-0.5-2.71-0.93c-0.47-0.24-0.93-0.51-1.36-0.82c-0.18-0.13-0.35-0.27-0.52-0.42 c-0.48-0.4-0.91-0.83-1.31-1.27c-0.06-0.06-0.11-0.12-0.16-0.18c-0.06-0.06-0.12-0.13-0.17-0.19c-0.38-0.48-0.7-0.97-0.96-1.49 c-0.24-0.46-0.43-0.95-0.58-1.49c-0.06-0.19-0.11-0.37-0.15-0.57c-0.01-0.01-0.02-0.03-0.02-0.05c-0.1-0.41-0.19-0.84-0.24-1.27 c-0.06-0.33-0.09-0.66-0.09-1c-0.02-0.13-0.02-0.27-0.02-0.4l1.91-2.95l1.87-2.88l0.85-1.31l0.77-1.18l0.26-0.41v-1.03 c0.02-0.23,0.03-0.47,0.02-0.69c-0.01-0.7-0.15-1.38-0.38-2.03c-0.22-0.69-0.53-1.34-0.85-1.94c-0.38-0.69-0.78-1.31-1.11-1.87 C14,7.4,13.66,6.73,13.75,6.26C14.47,6.09,15.23,6,16,6h16c4.18,0,7.78,2.6,9.27,6.26C41.43,12.65,41.57,13.06,41.67,13.48z" />
             <path fill="#4928f4" d="M42,16v0.27l-1.38,0.8l-0.88,0.51l-0.97,0.56l-1.94,1.13l-1.9,1.1l-1.94,1.12l-0.77,0.45 c0,0.48-0.12,0.92-0.34,1.32c-0.31,0.58-0.83,1.06-1.49,1.47c-0.67,0.41-1.49,0.74-2.41,0.98c0,0,0-0.01-0.01,0 c-3.56,0.92-8.42,0.5-10.78-1.26c-0.66-0.49-1.12-1.09-1.32-1.78c-0.06-0.23-0.09-0.48-0.09-0.73v-7.19 c0.01-0.15-0.09-0.3-0.27-0.45c-0.54-0.43-1.81-0.84-3.23-1.25c-1.11-0.31-2.3-0.62-3.3-0.92c-0.79-0.24-1.46-0.48-1.86-0.71 c0.18-0.35,0.39-0.7,0.61-1.03c1.4-2.05,3.54-3.56,6.02-4.13C14.47,6.09,15.23,6,16,6h10.8c5.37,0.94,10.32,3.13,14.47,6.26 c0.16,0.39,0.3,0.8,0.4,1.22c0.18,0.66,0.29,1.34,0.32,2.05C42,15.68,42,15.84,42,16z" />
@@ -107,12 +140,12 @@
             </g>
           </svg>
           </a>
-          <a href="https://twitter.com">
+          <a href="https://twitter.com" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 48 48">
             <path fill="#03A9F4" d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429" />
             </svg>
           </a>
-          <a href="https://facebook.com">
+          <a href="https://facebook.com" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="96" height="96">
             <linearGradient id="Ld6sqrtcxMyckEl6xeDdMa" x1="9.993" x2="40.615" y1="9.993" y2="40.615" gradientUnits="userSpaceOnUse">
               <stop offset="0" stop-color="#2aa4f4" />
@@ -122,7 +155,7 @@
             <path fill="#fff" d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z" />
           </svg>
           </a>
-          <a href="https://instagram.com">
+          <a href="https://whatsapp.com" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="96" height="96">
             <path fill="#fff" d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z" />
             <path fill="#fff" d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z" />
@@ -142,25 +175,62 @@
         </div>
     </div>
   </template>
+  
   <style type="scss" scoped>
+    
     :root{
-        --primary-color: #2067ae;
-    }
-    .about{
-    h1{
-      font-size: 30px;
-      font-weight: 700;
-      text-align: center;
-      padding: 20px 0;
-    }
-    .first-section{}
-    .second-section{}
-    .third-section{
-      .reviews{
-        display: flex;
-        width: 80%;
+          --primary-color: #2067ae;
       }
-    }
+    .house{
+        h1{
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container{
+            display: flex;
+            gap: 20px;
+            padding: 0 20px;
+            justify-content: center;
+            .slider{
+                width: 900px;
+                height: 500px;
+                border: 1px red solid;
+                border-radius: 10px;
+                img{
+                  height: 500px;
+                  width: 100%;
+                  border-radius: 10px;
+                  object-fit: cover;
+                }
+            }
+            .details{
+                border: 1px red solid;
+                width: 30%;
+                height: 500px;
+                h2{
+                    text-align: center;
+                }
+                .facts{
+                    padding: 20px 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    p{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        svg{
+                            height: 20px;
+                            width: 20px;
+                            transform: rotate(-90deg);
+                            fill: #2067ae;
+                        }
+                    }
+                }
+            }
+        }
     }
     .footer{
       padding: 20px 3rem;
@@ -187,41 +257,44 @@
        }
       }
   </style>
-  <script>
-  
+  <!-- <script>
+
+
+    export default {
+      name: 'Home',
+      data(){
+        return {
+          isLoged: false,
+        }
+      },
+      methods: {
+        signOut(){
+          if(!this.isLoged){
+            this.isLoged = this.$router.push('/signin');
+          }
+        }
+      },
+      mounted(){
+        this.signOut();
+      }
+    }
+  </script> -->
+<script>
   import { Swiper, SwiperSlide } from 'swiper/vue';
-  import { Pagination } from 'swiper/modules';
-  import { Navigation } from 'swiper/modules';
   import 'swiper/css';
+  import 'swiper/css/pagination';
+  import 'swiper/css/navigation';
+  import { Pagination, Navigation } from 'swiper/modules';
 
   export default {
     components: {
       Swiper,
       SwiperSlide,
     },
-    data() {
+    setup() {
       return {
-        modules: [Pagination],
+        modules: [Pagination, Navigation],
       };
-    }
+    },
   };
-    // export default {
-    //   name: 'Home',
-    //   data(){
-    //     return {
-    //       isLoged: false,
-    //     }
-    //   },
-    //   methods: {
-    //     signOut(){
-    //       if(!this.isLoged){
-    //         this.isLoged = this.$router.push('/signin');
-    //       }
-    //     }
-    //   },
-    //   mounted(){
-    //     this.signOut();
-    //   }
-    // }
-  </script>
-  
+</script>

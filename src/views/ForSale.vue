@@ -7,7 +7,7 @@
         <router-link to="/">Home</router-link>
         <router-link to="/forsale">For Sale</router-link>
         <router-link to="/forrent">For Rent</router-link>
-        <router-link to="/forrent">About Us</router-link>
+        <router-link to="/aboutus">About Us</router-link>
         <router-link to="/contactus">Contact Us</router-link>
      </div>
      <div class="right">
@@ -51,278 +51,27 @@
   <div class="sale">
     <h1>Homes for sale in Rwanda, Kigali</h1>
       <div class="sale-houses-container">
-        <div class="grid">
-          <span>Brokered by "Owner Name"</span>
-          <div class="container">
-            <div class="img">
-              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
-              <div class="status">Available</div>
-            </div>
-            <div class="text">
-              <h4>House for sale</h4>
-              <h3>$ "House Cost"</h3>
-              <div class="description">
-                <p><span>"1234" </span>Beds</p>
-                <p><span>"1234" </span>Bathrooms</p>
-                <p><span>"1234" </span>Parking</p>
-                <p><span>"1234" </span>Sqft</p>
+        <div class="grid" v-if="houses.length">
+          <div class="loop" v-for="house in houses" :key="house.HouseID">
+            <span>Brokered by {{ house.OwnerID }}</span>
+            <div class="container">
+              <div class="img">
+                <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
+                <div class="status">{{ house.House_Status }}</div>
               </div>
-              <div class="bottom">
-                <p>"Address"</p>
-                <button>Email Agent</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid">
-          <span>Brokered by "Owner Name"</span>
-          <div class="container">
-            <div class="img">
-              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
-              <div class="status">Available</div>
-            </div>
-            <div class="text">
-              <h4>House for sale</h4>
-              <h3>$ "House Cost"</h3>
-              <div class="description">
-                <p><span>"1234" </span>Beds</p>
-                <p><span>"1234" </span>Bathrooms</p>
-                <p><span>"1234" </span>Parking</p>
-                <p><span>"1234" </span>Sqft</p>
-              </div>
-              <div class="bottom">
-                <p>"Address"</p>
-                <button>Email Agent</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid">
-          <span>Brokered by "Owner Name"</span>
-          <div class="container">
-            <div class="img">
-              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
-              <div class="status">Available</div>
-            </div>
-            <div class="text">
-              <h4>House for sale</h4>
-              <h3>$ "House Cost"</h3>
-              <div class="description">
-                <p><span>"1234" </span>Beds</p>
-                <p><span>"1234" </span>Bathrooms</p>
-                <p><span>"1234" </span>Parking</p>
-                <p><span>"1234" </span>Sqft</p>
-              </div>
-              <div class="bottom">
-                <p>"Address"</p>
-                <button>Email Agent</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid">
-          <span>Brokered by "Owner Name"</span>
-          <div class="container">
-            <div class="img">
-              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
-              <div class="status">Available</div>
-            </div>
-            <div class="text">
-              <h4>House for sale</h4>
-              <h3>$ "House Cost"</h3>
-              <div class="description">
-                <p><span>"1234" </span>Beds</p>
-                <p><span>"1234" </span>Bathrooms</p>
-                <p><span>"1234" </span>Parking</p>
-                <p><span>"1234" </span>Sqft</p>
-              </div>
-              <div class="bottom">
-                <p>"Address"</p>
-                <button>Email Agent</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid">
-          <span>Brokered by "Owner Name"</span>
-          <div class="container">
-            <div class="img">
-              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
-              <div class="status">Available</div>
-            </div>
-            <div class="text">
-              <h4>House for sale</h4>
-              <h3>$ "House Cost"</h3>
-              <div class="description">
-                <p><span>"1234" </span>Beds</p>
-                <p><span>"1234" </span>Bathrooms</p>
-                <p><span>"1234" </span>Parking</p>
-                <p><span>"1234" </span>Sqft</p>
-              </div>
-              <div class="bottom">
-                <p>"Address"</p>
-                <button>Email Agent</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid">
-          <span>Brokered by "Owner Name"</span>
-          <div class="container">
-            <div class="img">
-              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
-              <div class="status">Available</div>
-            </div>
-            <div class="text">
-              <h4>House for sale</h4>
-              <h3>$ "House Cost"</h3>
-              <div class="description">
-                <p><span>"1234" </span>Beds</p>
-                <p><span>"1234" </span>Bathrooms</p>
-                <p><span>"1234" </span>Parking</p>
-                <p><span>"1234" </span>Sqft</p>
-              </div>
-              <div class="bottom">
-                <p>"Address"</p>
-                <button>Email Agent</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid">
-          <span>Brokered by "Owner Name"</span>
-          <div class="container">
-            <div class="img">
-              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
-              <div class="status">Available</div>
-            </div>
-            <div class="text">
-              <h4>House for sale</h4>
-              <h3>$ "House Cost"</h3>
-              <div class="description">
-                <p><span>"1234" </span>Beds</p>
-                <p><span>"1234" </span>Bathrooms</p>
-                <p><span>"1234" </span>Parking</p>
-                <p><span>"1234" </span>Sqft</p>
-              </div>
-              <div class="bottom">
-                <p>"Address"</p>
-                <button>Email Agent</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid">
-          <span>Brokered by "Owner Name"</span>
-          <div class="container">
-            <div class="img">
-              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
-              <div class="status">Available</div>
-            </div>
-            <div class="text">
-              <h4>House for sale</h4>
-              <h3>$ "House Cost"</h3>
-              <div class="description">
-                <p><span>"1234" </span>Beds</p>
-                <p><span>"1234" </span>Bathrooms</p>
-                <p><span>"1234" </span>Parking</p>
-                <p><span>"1234" </span>Sqft</p>
-              </div>
-              <div class="bottom">
-                <p>"Address"</p>
-                <button>Email Agent</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid">
-          <span>Brokered by "Owner Name"</span>
-          <div class="container">
-            <div class="img">
-              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
-              <div class="status">Available</div>
-            </div>
-            <div class="text">
-              <h4>House for sale</h4>
-              <h3>$ "House Cost"</h3>
-              <div class="description">
-                <p><span>"1234" </span>Beds</p>
-                <p><span>"1234" </span>Bathrooms</p>
-                <p><span>"1234" </span>Parking</p>
-                <p><span>"1234" </span>Sqft</p>
-              </div>
-              <div class="bottom">
-                <p>"Address"</p>
-                <button>Email Agent</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid">
-          <span>Brokered by "Owner Name"</span>
-          <div class="container">
-            <div class="img">
-              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
-              <div class="status">Available</div>
-            </div>
-            <div class="text">
-              <h4>House for sale</h4>
-              <h3>$ "House Cost"</h3>
-              <div class="description">
-                <p><span>"1234" </span>Beds</p>
-                <p><span>"1234" </span>Bathrooms</p>
-                <p><span>"1234" </span>Parking</p>
-                <p><span>"1234" </span>Sqft</p>
-              </div>
-              <div class="bottom">
-                <p>"Address"</p>
-                <button>Email Agent</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid">
-          <span>Brokered by "Owner Name"</span>
-          <div class="container">
-            <div class="img">
-              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
-              <div class="status">Available</div>
-            </div>
-            <div class="text">
-              <h4>House for sale</h4>
-              <h3>$ "House Cost"</h3>
-              <div class="description">
-                <p><span>"1234" </span>Beds</p>
-                <p><span>"1234" </span>Bathrooms</p>
-                <p><span>"1234" </span>Parking</p>
-                <p><span>"1234" </span>Sqft</p>
-              </div>
-              <div class="bottom">
-                <p>"Address"</p>
-                <button>Email Agent</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid">
-          <span>Brokered by "Owner Name"</span>
-          <div class="container">
-            <div class="img">
-              <img src="../assets/Images/hoouseEG.jpg" alt="" srcset="">
-              <div class="status">Available</div>
-            </div>
-            <div class="text">
-              <h4>House for sale</h4>
-              <h3>$ "House Cost"</h3>
-              <div class="description">
-                <p><span>"1234" </span>Beds</p>
-                <p><span>"1234" </span>Bathrooms</p>
-                <p><span>"1234" </span>Parking</p>
-                <p><span>"1234" </span>Sqft</p>
-              </div>
-              <div class="bottom">
-                <p>"Address"</p>
-                <button>Email Agent</button>
+              <div class="text">
+                <router-link :to="`/forsale/house/${house.HouseID}`"><h3>{{ house.Title }}</h3></router-link>
+                <h3>$ {{ house.Price }}</h3>
+                <div class="description">
+                  <p><span>{{ house.Bedrooms }}</span> Beds</p>
+                  <p><span>{{ house.Bathrooms }}</span> Bathrooms</p>
+                  <p><span>{{ house.Rating }}</span> Rating</p>
+                  <p><span>{{ house.Plot_size }}</span> Sqft</p>
+                </div>
+                <div class="bottom">
+                  <p>{{ house.Address }}</p>
+                  <button>Email Agent</button>
+                </div>
               </div>
             </div>
           </div>
@@ -407,6 +156,8 @@
   h1{
     font-size: 30px;
     font-weight: 700;
+    text-align: center;
+    padding: 20px 0;
   }
   .sale-houses-container{
     border: 1px red solid;
@@ -433,7 +184,11 @@
         flex-direction: column;
         justify-content: center;
         border-radius: 20px;
+        transition: .1s;
         gap: 10px;
+        &:hover{
+          box-shadow: 0 2px 21px 2px #00000030;
+        }
         .img{
           position: relative;
           width: 100%;
@@ -457,19 +212,8 @@
         }
         .text{
           padding:0 20px 10px 20px;
-          h4{
+          h3{
             margin: 10px 0;
-            position: relative;
-            &::after{
-              position: absolute;
-              content: '';
-              width: 10px;
-              height: 10px;
-              top: 0;
-              left: 0;
-              border-radius: 50%;
-              background: green;
-            }
           }
           .description{
             padding: 10px 0;
@@ -510,7 +254,7 @@
   }
 }
 .footer{
-  padding: 10px 3rem;
+  padding: 20px 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -534,6 +278,31 @@
    }
   }
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      houses: []
+    };
+  },
+  created() {
+    this.fetchHousesForSale();
+  },
+  methods: {
+    fetchHousesForSale() {
+      fetch('http://localhost/casa-cove/api/sale-houses-api.php')
+        .then(response => response.json())
+        .then(data => {
+          this.houses = data;
+        })
+        .catch(error => {
+          console.error('Error fetching houses for sale:', error);
+        });
+    }
+  }
+};
+</script>
 <!-- <script>
   export default {
     name: 'Home',

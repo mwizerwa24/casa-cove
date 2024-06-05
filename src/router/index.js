@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import ForRent from '../views/ForRent.vue'
 import ForSale from '../views/ForSale.vue'
+import Housepage from '../views/HousePage.vue'
 import AboutUs from '../views/AboutUs.vue'
 import ContactUs from '../views/ContactUs.vue'
 import SignIn from '../views/SignIn.vue'
@@ -17,6 +18,11 @@ const routes = [
     path: '/forsale',
     name: 'forsale',
     component: ForSale
+  },
+  {
+    path: '/forsale/house/id',
+    name: 'house',
+    component: Housepage
   },
   {
     path: '/forrent',
